@@ -36,7 +36,7 @@ public class Blogg {
 	}
 
 	public boolean finnes(Innlegg innlegg) {
-		for(int i = 0; i < innleggtabell.length; i++){
+		for(int i = 0; i < nesteledig; i++){
             if(innleggtabell[i].erLik(innlegg)){
                 return true;
             }
@@ -64,6 +64,7 @@ public class Blogg {
             }
             else if(innleggtabell[i] == null){
                 innleggtabell[i] = innlegg;
+				nesteledig++;
                 return true;
             }
         }
