@@ -9,7 +9,7 @@ public class TestTekst {
 	
 	@Test
 	public void testConstructor1() {
-		Tekst tekst = new Tekst(1,"Ole Olsen", "23-10", 8, "en tekst");
+		Tekst tekst = new Tekst(1,"Ole Olsen", "23-10", 0, "en tekst");
 		
 		assertEquals("Ole Olsen",tekst.getBruker());
 		assertEquals(1,tekst.getId());
@@ -41,7 +41,7 @@ public class TestTekst {
 	
 	@Test
 	public void testToString() {
-		Tekst tekst = new Tekst(1,"Ole Olsen", "23-10", 69, "en tekst");
+		Tekst tekst = new Tekst(1,"Ole Olsen", "23-10", 0, "en tekst");
 		
 		String str = "TEKST\n1\nOle Olsen\n23-10\n0\nen tekst\n";
 		

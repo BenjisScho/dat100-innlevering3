@@ -113,8 +113,9 @@ public class TestBlogg {
 	public void testtoString() {
 		Blogg samling = new Blogg(2);
 		
-		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10","en tekst");
-		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10","et bilde","http://www.picture.com/oo.jpg");
+		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10", 5, "en tekst");
+		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10", 32,
+				"et bilde","http://www.picture.com/oo.jpg");
 
 		samling.leggTil(innlegg1);
 		samling.leggTil(innlegg2);

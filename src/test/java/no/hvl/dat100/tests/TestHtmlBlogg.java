@@ -16,8 +16,9 @@ class TestHtmlBlogg {
 	@Test
 	public void testskriv() {
 		
-		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10","DAT100 oppgave 6");
-		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10","HVL logo","https://www.west-norway.no/wp-content/uploads/2018/05/HVL-nettside.jpg");
+		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10", 6, "DAT100 oppgave 6");
+		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10", 2,
+				"HVL logo","https://www.west-norway.no/wp-content/uploads/2018/05/HVL-nettside.jpg");
 		
 		HtmlBlogg samling = new HtmlBlogg();
 		

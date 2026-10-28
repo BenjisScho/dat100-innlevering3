@@ -16,8 +16,9 @@ public class TestSkrivBlogg {
 	@Test
 	public void testskriv() {
 		
-		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10","en tekst");
-		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10","et bilde","http://www.picture.com/oo.jpg");
+		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10", 69, "en tekst");
+		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10",67,
+				"et bilde","http://www.picture.com/oo.jpg");
 		
 		Blogg samling = new Blogg();
 		
