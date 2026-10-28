@@ -51,10 +51,6 @@ public class Blogg {
             }else{
                 return true;
             }
-
-            /*else if (i + 1 == innleggtabell.length && innleggtabell[i] != null){
-                return false;
-            }*/
         }
         return false;
 	}

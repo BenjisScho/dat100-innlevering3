@@ -71,10 +71,7 @@ public class Innlegg {
 	
 	@Override
 	public String toString() {
-        //String s;
-        //s = bruker + "\"" + "n" + dato + "\"" + "n" + likes + "\"" + "n";
         return String.format("%s%n%s%n%s%n%s%n",id, bruker,  dato, likes);
-				
 	}
 	
 	// Metoden nedenfor er kun for valgfri oppgave 6
