@@ -17,9 +17,9 @@ public class BloggApp {
 
 	public static String toHTML() {
 
-		Tekst innlegg1 = new Tekst(1, "Sven-Olai", "23-10",
+		Tekst innlegg1 = new Tekst(1, "Sven-Olai", "23-10", 87,
 				"Lars, hva er status for den siste obligatoriske innleveringen?");
-		Bilde innlegg2 = new Bilde(2, "Lars", "24-10",
+		Bilde innlegg2 = new Bilde(2, "Lars", "24-10", 10,
 				"Ser bra ut! - har lagt ved output-eksempel fra enhetstester",
 				"https://lmkr.github.io/junitrun.png");
 
