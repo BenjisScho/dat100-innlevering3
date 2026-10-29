@@ -72,39 +72,15 @@ public class Blogg {
 	}
 	
 	public String toString() {
-        //2\nTEKST\n1\nOle Olsen\n23-10\n0\nen tekst\nBILDE\n2\nOline Olsen\n24-10\n0\net bilde\nhttp://www.picture.com/oo.jpg\n
-        Innlegg inntab[] = innleggtabell;
+        Innlegg[] inntab = innleggtabell;
         String s = "";
+        s += inntab.length + "\n";
+
         for (int i = 0; i < inntab.length; i++){
-             s = String.format("%s%n%s%n%s%n%s%n%s%n",
-                    nesteledig, inntab[i].getClass(), inntab[i].getBruker(),
-                    inntab[i].getDato(), inntab[i].getLikes());
+            s += inntab[i].toString();
+
         }
         return s;
     }
-
-	// valgfrie oppgaver nedenfor
-	
-	/*public void utvid() {
-		throw new UnsupportedOperationException(TODO.method());
-	}
-	
-	public boolean leggTilUtvid(Innlegg innlegg) {
-
-		throw new UnsupportedOperationException(TODO.method());
-		
-	}
-	
-	public boolean slett(Innlegg innlegg) {
-		
-		throw new UnsupportedOperationException(TODO.method());
-	}
-	
-	public int[] search(String keyword) {
-		
-		throw new UnsupportedOperationException(TODO.method());
-
-	}*/
-
 
 }

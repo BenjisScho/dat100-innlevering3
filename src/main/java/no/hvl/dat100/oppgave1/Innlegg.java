@@ -73,11 +73,5 @@ public class Innlegg {
 	public String toString() {
         return String.format("%s%n%s%n%s%n%s%n",id, bruker,  dato, likes);
 	}
-	
-	// Metoden nedenfor er kun for valgfri oppgave 6
-	public String toHTML() {
-		
-		throw new UnsupportedOperationException(TODO.method());
-				
-	}
+
 }
